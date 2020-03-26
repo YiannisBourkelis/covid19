@@ -102,6 +102,7 @@
 </div>
 
 <script>
+
 $(document).ready(function () {
     $('#myform').submit(function (e) {
             //document.cookie = "yourCookieName=okokoko";
@@ -118,6 +119,13 @@ $(document).ready(function () {
         $("#inputBirthdate").val(Cookies.get('cookie_inputBirthdate'));
         $("#inputAddress").val(Cookies.get('cookie_inputAddress'));
         $("#inputPlace").val(Cookies.get('cookie_inputPlace'));
+
+        var d = new Date();
+        var strDate = d.getDate()  + "/" + (d.getMonth()+1) + "/" + d.getFullYear() ;
+        $("#inputTravelDate").val(strDate);
+
+        var strTime = d.getHours()  + ":" + (d.getMinutes()+1);
+        $("#inputTravelTime").val(strTime);
     });
 </script>
 @endsection
