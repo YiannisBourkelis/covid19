@@ -15,7 +15,7 @@
       </div><br />
     @endif
 
-     <form method="post" action="{{ route('print_travel_exclusion_form') }}">
+     <form method="post" name="myform" id="myform" action="{{ route('print_travel_exclusion_form') }}">
           @csrf
           <div class="form-group">
             <label for="inputYpografon">Ο/Η υπογράφων-ούσα</label>
@@ -100,4 +100,18 @@
 
  </div>
 </div>
+
+<script>
+$(document).ready(function () {
+    $('#myform').submit(function (e) {
+            //document.cookie = "yourCookieName=okokoko";
+            var data = $("#inputYpografon").val();
+            Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90, path: '' })
+    });
+});
+
+    $(function() {
+        $("#inputYpografon").val(Cookies.get('cookie_inputYpografon'));
+    });
+</script>
 @endsection
