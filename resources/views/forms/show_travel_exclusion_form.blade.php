@@ -106,12 +106,12 @@ $(document).ready(function () {
     $('#myform').submit(function (e) {
             //document.cookie = "yourCookieName=okokoko";
             var data = $("#inputYpografon").val();
-            Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90, path: '' })
+            Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90})
     });
 });
 
     $(function() {
-        $("#inputYpografon").val(Cookies.get('cookie_inputYpografon'));
+        $("#cookie_inputYpografon").val(Cookies.get('cookie_inputYpografon'));
     });
 </script>
 @endsection

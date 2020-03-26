@@ -22,7 +22,7 @@
       <div class="col">
 
  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">COVID-19</a>
+      <a class="navbar-brand" href="{{route('show_travel_exclusion_form')}}">COVID-19</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,6 +30,7 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="{{route('show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link d-none" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
+          <a class="nav-item nav-link" href="{{route('statistics')}}">Στατιστικά</a>
           <a class="nav-item nav-link" href="#">Χρήσιμα</a>
           <a class="nav-item nav-link" href="#">Σχετικά</a>
         </div>
