@@ -106,12 +106,18 @@ $(document).ready(function () {
     $('#myform').submit(function (e) {
             //document.cookie = "yourCookieName=okokoko";
             var data = $("#inputYpografon").val();
-            Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90})
+            Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90, path: ''})
+            Cookies.set('cookie_inputBirthdate', $("#inputBirthdate").val(), {expires: 90, path: '' })
+            Cookies.set('cookie_inputAddress', $("#inputAddress").val(), {expires: 90, path: '' })
+            Cookies.set('cookie_inputPlace', $("#inputPlace").val(), {expires: 90, path: '' })
     });
 });
 
     $(function() {
-        $("#cookie_inputYpografon").val(Cookies.get('cookie_inputYpografon'));
+        $("#inputYpografon").val(Cookies.get('cookie_inputYpografon'));
+        $("#inputBirthdate").val(Cookies.get('cookie_inputBirthdate'));
+        $("#inputAddress").val(Cookies.get('cookie_inputAddress'));
+        $("#inputPlace").val(Cookies.get('cookie_inputPlace'));
     });
 </script>
 @endsection
