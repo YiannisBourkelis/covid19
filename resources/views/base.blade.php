@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="{{route('show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
+          <a class="nav-item nav-link d-none" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
           <a class="nav-item nav-link" href="#">Χρήσιμα</a>
           <a class="nav-item nav-link" href="#">Σχετικά</a>
         </div>
