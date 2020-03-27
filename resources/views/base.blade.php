@@ -32,7 +32,7 @@
           <a class="nav-item nav-link @if (Route::current()->getName() == 'show_travel_exclusion_form') active @endif" href="{{route('show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link d-none" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
           <a class="nav-item nav-link @if (Route::current()->getName() == 'statistics') active @endif" href="{{route('statistics')}}">Στατιστικά</a>
-          <a class="nav-item nav-link" href="#">Χρήσιμα</a>
+          <a class="nav-item nav-link @if (Route::current()->getName() == 'useful') active @endif" href="{{route('useful')}}">Χρήσιμα</a>
           <a class="nav-item nav-link @if (Route::current()->getName() == 'about') active @endif" href="{{route('about')}}">Σχετικά</a>
         </div>
 
