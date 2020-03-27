@@ -112,6 +112,8 @@ $(document).ready(function () {
             Cookies.set('cookie_inputAddress', $("#inputAddress").val(), {expires: 90, path: '' })
             Cookies.set('cookie_inputPlace', $("#inputPlace").val(), {expires: 90, path: '' })
     });
+
+    $('show_travel_exclusion_form').addClass('active');
 });
 
     $(function() {
@@ -120,12 +122,13 @@ $(document).ready(function () {
         $("#inputAddress").val(Cookies.get('cookie_inputAddress'));
         $("#inputPlace").val(Cookies.get('cookie_inputPlace'));
 
-        var d = new Date();
-        var strDate = d.getDate()  + "/" + (d.getMonth()+1) + "/" + d.getFullYear() ;
-        $("#inputTravelDate").val(strDate);
-
-        var strTime = d.getHours()  + ":" + (d.getMinutes()+1);
-        $("#inputTravelTime").val(strTime);
+        var currentDate = new Date();
+        $("#inputTravelDate").val(currentDate.toLocaleDateString('el-GR'));
+        var currentTime = currentDate.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'})
+           .replace(/(:\d{2}| [AP]M)$/, "");
+        $("#inputTravelTime").val(currentTime);
     });
+
+
 </script>
 @endsection
