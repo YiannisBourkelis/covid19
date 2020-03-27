@@ -95,8 +95,14 @@
         </b>
       </div>
 
-      <button type="submit" class="btn btn-primary">Εκτύπωση</button>
+      <button type="submit" class="btn btn-primary btn-default form-control mt-3 mb-4">Εκτύπωση</button>
+
      </form>
+
+     <div class="alert alert-success" role="alert">
+       Η φόρμα αποθηκεύει τα στοιχεία που καταχωρείτε τοπικά στον υπολογιστή σας χρησιμοποιώντας Cookies
+       ώστε να συμπληρώνεται ταχύτερα, καθώς δεν χρειάζετε να πληκτρολογείτε τα ίδια στοιχεία κάθε φορά.
+     </div>
 
  </div>
 </div>
