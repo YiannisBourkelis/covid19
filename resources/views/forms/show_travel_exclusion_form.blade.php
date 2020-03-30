@@ -97,7 +97,7 @@
 
       <div class = "row">
         <div class = "col">
-          <button type="button" class="btn btn-primary btn-block mt-3 mb-4" onclick="myFunction()">Αποστολή SMS</button>
+          <button type="button" class="btn btn-primary form-control btn-block no-wrap mt-3 mb-4" onclick="sendSMS()" >Αποστολή SMS</button>
         </div>
         <div class = "col">
           <button type="submit" class="btn btn-primary btn-default form-control btn-block mt-3 mb-4">Εκτύπωση</button>
@@ -115,34 +115,7 @@
 </div>
 
 <script>
-
-$(document).ready(function () {
-    $('#myform').submit(function (e) {
-            //document.cookie = "yourCookieName=okokoko";
-            var data = $("#inputYpografon").val();
-            Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90, path: ''})
-            Cookies.set('cookie_inputBirthdate', $("#inputBirthdate").val(), {expires: 90, path: '' })
-            Cookies.set('cookie_inputAddress', $("#inputAddress").val(), {expires: 90, path: '' })
-            Cookies.set('cookie_inputPlace', $("#inputPlace").val(), {expires: 90, path: '' })
-    });
-
-    $('show_travel_exclusion_form').addClass('active');
-});
-
-    $(function() {
-        $("#inputYpografon").val(Cookies.get('cookie_inputYpografon'));
-        $("#inputBirthdate").val(Cookies.get('cookie_inputBirthdate'));
-        $("#inputAddress").val(Cookies.get('cookie_inputAddress'));
-        $("#inputPlace").val(Cookies.get('cookie_inputPlace'));
-
-        var currentDate = new Date();
-        $("#inputTravelDate").val(currentDate.toLocaleDateString('el-GR'));
-        var currentTime = currentDate.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'})
-           .replace(/(:\d{2}| [AP]M)$/, "");
-        $("#inputTravelTime").val(currentTime);
-    });
-
-		function myFunction() {
+  		function sendSMS() {
 			var checkBox1 = document.getElementById("customCheckFarmakeio");
 			var checkBox2 = document.getElementById("customCheckMarket");
 			var checkBox3 = document.getElementById("customCheckBank");
@@ -168,11 +141,38 @@ $(document).ready(function () {
 			} else {
 				select = '';
 			}
-			
-			//location.href ='www.google.com'
+
+      saveFormCookies();
 			location.href = encodeURI('sms:13033;?&body=' + select + ' ' + name + ' ' + address);
-			//window.open('sms:13033;?&body=' + select + ' ' + name + ' ' + address;);
 		}	
+
+    function saveFormCookies()
+    {
+      Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90, path: ''})
+      Cookies.set('cookie_inputBirthdate', $("#inputBirthdate").val(), {expires: 90, path: '' })
+      Cookies.set('cookie_inputAddress', $("#inputAddress").val(), {expires: 90, path: '' })
+      Cookies.set('cookie_inputPlace', $("#inputPlace").val(), {expires: 90, path: '' })
+    }
+
+    $(document).ready(function () {
+        $('#myform').submit(function (e) {
+          saveFormCookies();
+          return true;
+        });
+    });
+
+    $(function() {
+        $("#inputYpografon").val(Cookies.get('cookie_inputYpografon'));
+        $("#inputBirthdate").val(Cookies.get('cookie_inputBirthdate'));
+        $("#inputAddress").val(Cookies.get('cookie_inputAddress'));
+        $("#inputPlace").val(Cookies.get('cookie_inputPlace'));
+
+        var currentDate = new Date();
+        $("#inputTravelDate").val(currentDate.toLocaleDateString('el-GR'));
+        var currentTime = currentDate.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'})
+           .replace(/(:\d{2}| [AP]M)$/, "");
+        $("#inputTravelTime").val(currentTime);
+    });
 
 </script>
 @endsection
