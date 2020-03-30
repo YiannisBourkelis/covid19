@@ -96,7 +96,7 @@
       </div>
 
       <div class = "row">
-        <div class = "col">
+        <div class = "col" id="btnSendSMS">
           <button type="button" class="btn btn-primary form-control btn-block no-wrap mt-3 mb-4" onclick="sendSMS()" >Αποστολή SMS</button>
         </div>
         <div class = "col">
@@ -159,6 +159,11 @@
           saveFormCookies();
           return true;
         });
+
+        var isMobile = /(android)/i.test(navigator.userAgent) || /(iphone)/i.test(navigator.userAgent) ||
+                       /(ipad)/i.test(navigator.userAgent) || /(ipod)/i.test(navigator.userAgent) ||
+                       /(mobile)/i.test(navigator.userAgent);
+        isMobile ? true : $("#btnSendSMS").addClass('d-none');
     });
 
     $(function() {
