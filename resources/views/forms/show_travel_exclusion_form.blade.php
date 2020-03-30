@@ -170,7 +170,7 @@ $(document).ready(function () {
 			}
 			
 			//location.href ='www.google.com'
-			location.href = 'sms:13033;?&body=' + select + '%20' + name + '%20' + address;
+			location.href = encodeURI('sms:13033;?&body=' + select + ' ' + name + ' ' + address);
 			//window.open('sms:13033;?&body=' + select + ' ' + name + ' ' + address;);
 		}	
 
