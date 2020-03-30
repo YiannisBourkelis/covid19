@@ -95,7 +95,14 @@
         </b>
       </div>
 
-      <button type="submit" class="btn btn-primary btn-default form-control mt-3 mb-4">Εκτύπωση</button>
+      <div class = "row">
+        <div class = "col">
+          <button type="button" class="btn btn-primary btn-block mt-3 mb-4" onclick="myFunction()">Αποστολή SMS</button>
+        </div>
+        <div class = "col">
+          <button type="submit" class="btn btn-primary btn-default form-control btn-block mt-3 mb-4">Εκτύπωση</button>
+        </div>
+    </div>
 
      </form>
 
@@ -135,6 +142,37 @@ $(document).ready(function () {
         $("#inputTravelTime").val(currentTime);
     });
 
+		function myFunction() {
+			var checkBox1 = document.getElementById("customCheckFarmakeio");
+			var checkBox2 = document.getElementById("customCheckMarket");
+			var checkBox3 = document.getElementById("customCheckBank");
+			var checkBox4 = document.getElementById("customCheckHelp");
+			var checkBox5 = document.getElementById("customCheckTeleti");
+			var checkBox6 = document.getElementById("customCheckGym");
+			var select = '0';
+			var name = document.getElementById("inputYpografon").value;
+			var address = document.getElementById("inputAddress").value;
+			
+			 if (checkBox1.checked == true){
+				select = '1';
+			} else if (checkBox2.checked == true) {
+				select = '2';
+			} else if (checkBox3.checked == true) {
+				select = '3';
+			} else if (checkBox4.checked == true) {
+				select = '4';
+			} else if (checkBox5.checked == true) {
+				select = '5';
+			} else if (checkBox6.checked == true) {
+				select = '6';
+			} else {
+				select = '';
+			}
+			
+			//location.href ='www.google.com'
+			location.href = 'sms:13033;?&body=' + select + '%20' + name + '%20' + address;
+			//window.open('sms:13033;?&body=' + select + ' ' + name + ' ' + address;);
+		}	
 
 </script>
 @endsection

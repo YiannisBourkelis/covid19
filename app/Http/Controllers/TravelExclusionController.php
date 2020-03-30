@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Helpers\TravelExclusionForm;
-//use App\Helpers\MyClasses;
+use App\Classes\MobileFastDetect;
 
 class TravelExclusionController extends Controller
 {
-	public function show_travel_exclusion_form()
+	public function show_travel_exclusion_form(Request $request)
 	{
+		$rh = $request->header('user-agent');
+		$mobf = new MobileFastDetect;
+		//
 		return view('forms.show_travel_exclusion_form');
 	}
 

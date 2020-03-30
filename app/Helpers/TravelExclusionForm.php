@@ -9,7 +9,7 @@ class TravelExclusionForm
 	public ?string $inputAddress;
 	public ?string $inputPlace;
 	public ?string $inputTravelTime;
-  public ?string $inputTravelDate;
+    public ?string $inputTravelDate;
 	public bool $customCheckFarmakeio;
 	public bool $customCheckMarket;
 	public bool $customCheckBank;
