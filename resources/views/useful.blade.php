@@ -42,4 +42,10 @@
   <hr>
   <small class="text-muted">Github: <a href="https://github.com/dsfsi/covid19za">https://github.com/dsfsi/covid19za</a></small>
 </div>
+
+<div class="alert alert-success" role="alert">
+  Έργα ανοιχτής σχεδίασης για ζωτικής σημασίας νοσοκομειακό εξοπλισμό<br />
+  <a href="https://github.com/eellak/covid19-open">https://github.com/eellak/covid19-open</a>
+</div>
+
 @endsection

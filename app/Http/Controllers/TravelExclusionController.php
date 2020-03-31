@@ -10,9 +10,10 @@ class TravelExclusionController extends Controller
 {
 	public function show_travel_exclusion_form(Request $request)
 	{
-		$rh = $request->header('user-agent');
-		$mobf = new MobileFastDetect;
-		//
+		//$rh = $request->header('user-agent');
+		//$mobf = new MobileFastDetect;
+
+		//$ma = $request->getPreferredLanguage();
 		return view('forms.show_travel_exclusion_form');
 	}
 

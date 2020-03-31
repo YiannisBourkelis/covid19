@@ -24,3 +24,4 @@ Route::get('/about', function () { return view('about');})->name('about');
 Route::get('/useful', function (){return view('useful');})->name('useful');
 Route::post('/forms/print/travel_exclusion', 'TravelExclusionController@print_travel_exclusion_form')->name('print_travel_exclusion_form');
 Route::get('/forms/create/travel_exclusion', 'TravelExclusionController@show_travel_exclusion_form')->name('show_travel_exclusion_form');
+//Route::get('{locale}/forms/create/travel_exclusion', 'TravelExclusionController@show_travel_exclusion_form')->name('cy_show_travel_exclusion_form');
