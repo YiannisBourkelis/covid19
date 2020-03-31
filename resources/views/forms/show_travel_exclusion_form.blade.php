@@ -96,10 +96,10 @@
       </div>
 
       <div class = "row">
-        <div class = "col" id="btnSendSMS">
-          <button type="button" class="btn btn-primary form-control btn-block no-wrap mt-3 mb-4" onclick="sendSMS()" >Αποστολή SMS</button>
+        <div class = "col-md" id="btnSendSMS">
+          <button type="button" class="btn btn-primary form-control btn-block mt-3 mb-4" onclick="sendSMS()" >Αποστολή SMS</button>
         </div>
-        <div class = "col">
+        <div class = "col-md">
           <button type="submit" class="btn btn-primary btn-default form-control btn-block mt-3 mb-4">Εκτύπωση</button>
         </div>
     </div>
