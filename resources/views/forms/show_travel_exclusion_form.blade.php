@@ -97,16 +97,16 @@
 
       <div class = "row">
         <div class = "col-md" id="btnSendSMS">
-          <button type="button" class="btn btn-primary form-control btn-block mt-3 mb-4" onclick="sendSMS()" >Αποστολή SMS</button>
+          <button type="button" class="btn btn-primary form-control btn-block mt-3" onclick="sendSMS()" >Αποστολή SMS</button>
         </div>
         <div class = "col-md">
-          <button type="submit" class="btn btn-primary btn-default form-control btn-block mt-3 mb-4">Εκτύπωση</button>
+          <button type="submit" class="btn btn-primary btn-default form-control btn-block mt-3">Εκτύπωση</button>
         </div>
     </div>
 
      </form>
 
-     <div class="alert alert-success" role="alert">
+     <div class="alert alert-success mt-4" role="alert">
        Η φόρμα αποθηκεύει τα στοιχεία που καταχωρείτε τοπικά στον υπολογιστή σας χρησιμοποιώντας Cookies
        ώστε να συμπληρώνεται ταχύτερα, καθώς δεν χρειάζεται να πληκτρολογείτε τα ίδια στοιχεία κάθε φορά.
      </div>
