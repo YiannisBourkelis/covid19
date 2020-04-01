@@ -21,23 +21,51 @@
     <div class="row">
       <div class="col">
 
- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="{{route('show_travel_exclusion_form')}}">COVID-19</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-        <div class="navbar-nav">
-          <a class="nav-item nav-link @if (Route::current()->getName() == 'show_travel_exclusion_form') active @endif" href="{{route('show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link d-none" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
-          <a class="nav-item nav-link @if (Route::current()->getName() == 'statistics') active @endif" href="{{route('statistics')}}">Στατιστικά</a>
-          <a class="nav-item nav-link @if (Route::current()->getName() == 'useful') active @endif" href="{{route('useful')}}">Χρήσιμα</a>
-          <a class="nav-item nav-link @if (Route::current()->getName() == 'about') active @endif" href="{{route('about')}}">Σχετικά</a>
+      <div class="mx-auto">
+          <a class="navbar-brand" href="{{route('show_travel_exclusion_form')}}">COVID-19</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+
+        <div class="navbar-collapse collapse dual-collapse2">
+            <ul class="navbar-nav">
+
+     
+                <li class="nav-item">
+                  <a class="nav-item nav-link text-nowrap @if (Route::current()->getName() == 'show_travel_exclusion_form') active @endif" href="{{route('show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link d-none" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link @if (Route::current()->getName() == 'statistics') active @endif" href="{{route('statistics')}}">Στατιστικά</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link @if (Route::current()->getName() == 'useful') active @endif" href="{{route('useful')}}">Χρήσιμα</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link @if (Route::current()->getName() == 'about') active @endif" href="{{route('about')}}">Σχετικά</a> 
+                </li>
+            </ul>
         </div>
 
-      </div>
+        <div class="navbar-collapse collapse dual-collapse2">
+            <ul class="navbar-nav ml-auto d-none">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ελλάδα</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Κύπρος</a>
+                </li>
+            </ul>
+        </div>
+
     </nav>
+
+
 </div>
 </div>
 
