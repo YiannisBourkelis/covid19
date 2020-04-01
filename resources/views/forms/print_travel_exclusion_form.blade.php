@@ -69,28 +69,32 @@
 <p>&nbsp</p>
 
 <div class="row">
-  <div class="col-9">
-    <table class="table">
-      <tbody>
+  <div class="col-12">
+    <div class="row">
+      <div class="col-9">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="col-auto text-nowrap text-right"><h4>Τόπος:</h4></td>
+              <td class="col"><h4>{{$travelExclusionForm->inputPlace}}</h4></td>
+            </tr>
+            <tr>
+              <td class="col-auto text-nowrap text-right"><h4>Ημερομηνία:</h4></td>
+              <td class="col"><h4>{{$travelExclusionForm->inputTravelDate}}</h4></td>
+            </tr>
+            <tr>
+              <td class="col-auto text-nowrap text-right"><h4>Ο/Η Δηλών-ούσα:</h4></td>
+              <td class="col"><h4>{{$travelExclusionForm->inputYpografon}}</h4></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-3 text-center">
+        <h4>Υπογραφή</h4>
+      </div>
+    </div>
+  </div>
 
-        <tr>
-          <td class="col-auto text-nowrap text-right"><h4>Τόπος:</h4></td>
-          <td class="col"><h4>{{$travelExclusionForm->inputPlace}}</h4></td>
-        </tr>
-        <tr>
-          <td class="col-auto text-nowrap text-right"><h4>Ημερομηνία:</h4></td>
-          <td class="col"><h4>{{$travelExclusionForm->inputTravelDate}}</h4></td>
-        </tr>
-        <tr>
-          <td class="col-auto text-nowrap text-right"><h4>Ο/Η Δηλών-ούσα:</h4></td>
-          <td class="col"><h4>{{$travelExclusionForm->inputYpografon}}</h4></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="col-3 text-center">
-    <h4>Υπογραφή</h4>
-  </div>
 </div>
 
 @endsection
