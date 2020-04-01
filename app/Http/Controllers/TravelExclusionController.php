@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use GeoIp2\Database\Reader;
+
 use Illuminate\Http\Request;
 use App\Helpers\TravelExclusionForm;
 use App\Classes\MobileFastDetect;
@@ -10,10 +12,10 @@ class TravelExclusionController extends Controller
 {
 	public function show_travel_exclusion_form(Request $request)
 	{
-		//$rh = $request->header('user-agent');
-		//$mobf = new MobileFastDetect;
-
-		//$ma = $request->getPreferredLanguage();
+		$reader = new Reader('/usr/share/GeoIP/GeoLite2-Country.mmdb');
+		$record = $reader->country('1.1.1.1');
+		$isoCode = $record->country->isoCode; // GR / CY / other
+		
 		return view('forms.show_travel_exclusion_form');
 	}
 

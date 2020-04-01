@@ -148,10 +148,10 @@
 
     function saveFormCookies()
     {
-      Cookies.set('cookie_inputYpografon', $("#inputYpografon").val(), {expires: 90, path: ''})
-      Cookies.set('cookie_inputBirthdate', $("#inputBirthdate").val(), {expires: 90, path: '' })
-      Cookies.set('cookie_inputAddress', $("#inputAddress").val(), {expires: 90, path: '' })
-      Cookies.set('cookie_inputPlace', $("#inputPlace").val(), {expires: 90, path: '' })
+      Cookies.set('cookie_inputYpografon', encodeURIComponent($("#inputYpografon").val()), {expires: 90, path: ''})
+      Cookies.set('cookie_inputBirthdate', encodeURIComponent($("#inputBirthdate").val()), {expires: 90, path: '' })
+      Cookies.set('cookie_inputAddress', encodeURIComponent($("#inputAddress").val()), {expires: 90, path: '' })
+      Cookies.set('cookie_inputPlace', encodeURIComponent($("#inputPlace").val()), {expires: 90, path: '' })
     }
 
     $(document).ready(function () {
@@ -167,10 +167,10 @@
     });
 
     $(function() {
-        $("#inputYpografon").val(Cookies.get('cookie_inputYpografon'));
-        $("#inputBirthdate").val(Cookies.get('cookie_inputBirthdate'));
-        $("#inputAddress").val(Cookies.get('cookie_inputAddress'));
-        $("#inputPlace").val(Cookies.get('cookie_inputPlace'));
+        $("#inputYpografon").val(decodeURIComponent(Cookies.get('cookie_inputYpografon')));
+        $("#inputBirthdate").val(decodeURIComponent(Cookies.get('cookie_inputBirthdate')));
+        $("#inputAddress").val(decodeURIComponent(Cookies.get('cookie_inputAddress')));
+        $("#inputPlace").val(decodeURIComponent(Cookies.get('cookie_inputPlace')));
 
         var currentDate = new Date();
         $("#inputTravelDate").val(currentDate.toLocaleDateString('el-GR'));
