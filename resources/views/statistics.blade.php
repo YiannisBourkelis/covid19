@@ -5,7 +5,7 @@
 <div class="col">
 
 <div class="alert alert-success" role="alert">
-Αναλυτικά στατιστικά COVID-19 για την Ιταλία, Ισπανία, Ελλάδα και Τουρκία
+Αναλυτικά στατιστικά COVID-19 για την Ιταλία, Ισπανία, Ελλάδα, Κύπρο και Τουρκία
 <br />
 Επιμέλεια στατιστικών: Στάθης Γρηγοριάδης - <a href="https://covid19gr.wordpress.com">https://covid19gr.files.wordpress.com</a>
 </div>
