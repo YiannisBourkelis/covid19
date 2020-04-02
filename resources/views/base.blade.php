@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<title>COVID-19</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  
+  <title>COVID-19</title>
 
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
  <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" /> -->
 </head>
@@ -24,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
       <div class="mx-auto">
-          <a class="navbar-brand" href="{{route('show_travel_exclusion_form')}}">COVID-19</a>
+          <a class="navbar-brand" href="{{route(session('country', '').'_show_travel_exclusion_form')}}">COVID-19</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,16 +36,16 @@
 
      
                 <li class="nav-item">
-                  <a class="nav-item nav-link text-nowrap @if (Route::current()->getName() == 'show_travel_exclusion_form') active @endif" href="{{route('show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link text-nowrap @if (Route::current()->getName() == session('country', '').'_show_travel_exclusion_form') active @endif" href="{{route(session('country', '').'_show_travel_exclusion_form')}}">Εξαίρεση μετακίνησης πολιτών<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-item nav-link d-none" href="#">Εξαίρεση μετακίνησης εργαζομένων</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-item nav-link @if (Route::current()->getName() == 'statistics') active @endif" href="{{route('statistics')}}">Στατιστικά</a>
+                  <a class="nav-item nav-link @if (Route::current()->getName() == session('country', '').'_statistics') active @endif" href="{{route(session('country', '').'_statistics')}}">Στατιστικά</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-item nav-link @if (Route::current()->getName() == 'useful') active @endif" href="{{route('useful')}}">Χρήσιμα</a>
+                  <a class="nav-item nav-link @if (Route::current()->getName() == session('country', '').'_useful') active @endif" href="{{route(session('country', '').'_useful')}}">Χρήσιμα</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-item nav-link @if (Route::current()->getName() == session('country', '').'_about') active @endif" href="{{route(session('country', '').'_about')}}">Σχετικά</a> 
@@ -53,7 +54,7 @@
         </div>
 
         <div class="navbar-collapse collapse dual-collapse2">
-            <ul class="navbar-nav ml-auto d-none">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link @if (session('country') === '') active @endif" href="{{route('change_country', ['country' => 'greece', 'current_route_name' => Route::current()->getName()] )}}">Ελλάδα</a>
                 </li>

@@ -12,10 +12,6 @@ class TravelExclusionController extends Controller
 {
 	public function show_travel_exclusion_form(Request $request)
 	{
-		$reader = new Reader('/usr/share/GeoIP/GeoLite2-Country.mmdb');
-		$record = $reader->country('1.1.1.1');
-		$isoCode = $record->country->isoCode; // GR / CY / other
-		
 		return view('forms.show_travel_exclusion_form');
 	}
 

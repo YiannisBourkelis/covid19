@@ -20,6 +20,10 @@ class Localization
             return $next($request);
         }
 
+        if ($request->isMethod('post')){
+            return $next($request);
+        }
+
         if ( session()->has('country')){
             $session_country = session()->get('country');
         } else {
@@ -39,8 +43,6 @@ class Localization
             //$session_country = 'cyprus';
 
             session(['country' => $session_country]);
-            session()->keep(['country']);
-            session()->save();
         }
 
         if ($session_country == 'cyprus'){

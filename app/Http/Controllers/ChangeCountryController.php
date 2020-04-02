@@ -18,8 +18,6 @@ class ChangeCountryController extends Controller
         } else {
             session(['country' => '']);
         }
-        session()->keep(['country']);
-        session()->save();
 
         return redirect()->route('root_path');
     }
