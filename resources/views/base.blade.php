@@ -47,7 +47,7 @@
                   <a class="nav-item nav-link @if (Route::current()->getName() == 'useful') active @endif" href="{{route('useful')}}">Χρήσιμα</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-item nav-link @if (Route::current()->getName() == 'about') active @endif" href="{{route('about')}}">Σχετικά</a> 
+                  <a class="nav-item nav-link @if (Route::current()->getName() == session('country', '').'_about') active @endif" href="{{route(session('country', '').'_about')}}">Σχετικά</a> 
                 </li>
             </ul>
         </div>
@@ -55,10 +55,10 @@
         <div class="navbar-collapse collapse dual-collapse2">
             <ul class="navbar-nav ml-auto d-none">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ελλάδα</a>
+                    <a class="nav-link @if (session('country') === '') active @endif" href="{{route('change_country', ['country' => 'greece', 'current_route_name' => Route::current()->getName()] )}}">Ελλάδα</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Κύπρος</a>
+                    <a class="nav-link @if (session('country') === 'cyprus') active @endif" href="{{route('change_country', ['country' => 'cyprus', 'current_route_name' => Route::current()->getName()] )}}">Κύπρος</a>
                 </li>
             </ul>
         </div>

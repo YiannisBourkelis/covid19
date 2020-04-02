@@ -167,10 +167,10 @@
     });
 
     $(function() {
-        $("#inputYpografon").val(decodeURIComponent(Cookies.get('cookie_inputYpografon')));
-        $("#inputBirthdate").val(decodeURIComponent(Cookies.get('cookie_inputBirthdate')));
-        $("#inputAddress").val(decodeURIComponent(Cookies.get('cookie_inputAddress')));
-        $("#inputPlace").val(decodeURIComponent(Cookies.get('cookie_inputPlace')));
+        $("#inputYpografon").val(decodeURIComponent(Cookies.get('cookie_inputYpografon') === undefined ? '' : Cookies.get('cookie_inputYpografon')));
+        $("#inputBirthdate").val(decodeURIComponent(Cookies.get('cookie_inputBirthdate') === undefined ? '' : Cookies.get('cookie_inputBirthdate')));
+        $("#inputAddress").val(decodeURIComponent(Cookies.get('cookie_inputAddress') === undefined ? '' : Cookies.get('cookie_inputAddress')));
+        $("#inputPlace").val(decodeURIComponent(Cookies.get('cookie_inputPlace') === undefined ? '' : Cookies.get('cookie_inputPlace')));
 
         var currentDate = new Date();
         $("#inputTravelDate").val(currentDate.toLocaleDateString('el-GR'));
