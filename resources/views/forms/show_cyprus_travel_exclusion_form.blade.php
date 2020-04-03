@@ -130,18 +130,17 @@
 			var checkBox1 = document.getElementById("customCheckFarmakeio");
 			var checkBox2 = document.getElementById("customCheckMarket");
             var checkBox3 = document.getElementById("customCheckBank");
-            var checkBox4 = document.getElementById("customPublicSector");
+            var checkBox4 = document.getElementById("customCheckPublicSector");
             var checkBox5 = document.getElementById("customCheckHelp");
             var checkBox6 = document.getElementById("customCheckGym");
             var checkBox7 = document.getElementById("customCheckTeleti");
-            var checkBox8 = document.getElementById("customOther");
+            var checkBox8 = document.getElementById("customCheckOther");
 
-            customPublicSector
 			var select = '0';
 			var name = document.getElementById("inputYpografon").value;
 			var idcard = document.getElementById("inputIdCard").value;
 			
-			 if (checkBox1.checked == true){
+			if (checkBox1.checked == true){
 				select = '1';
 			} else if (checkBox2.checked == true) {
 				select = '2';
@@ -162,7 +161,7 @@
 			}
 
       saveFormCookies();
-			location.href = encodeURI('sms:13033;?&body=' + select + ' ' + name + ' ' + idcard);
+			location.href = encodeURI('sms:8998;?&body=' + select + ' ' + name + ' ' + idcard);
 		}	
 
     function saveFormCookies()
