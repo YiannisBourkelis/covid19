@@ -161,7 +161,7 @@
 			}
 
       saveFormCookies();
-			location.href = encodeURI('sms:8998;?&body=' + select + ' ' + name + ' ' + idcard);
+			location.href = encodeURI('sms:8998;?&body=' + select + ' ' + idcard + ' ' + 'TK');
 		}	
 
     function saveFormCookies()
