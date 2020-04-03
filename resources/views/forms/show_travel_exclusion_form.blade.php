@@ -48,7 +48,7 @@
 
          <div class="row">
            <div class="col">
-            <b>Δηλώνω ότι η μετακίνηση μου σχετίζεται με τον ακόλουθο λόγο: <br />
+            <b>Δηλώνω ότι η μετακίνηση μου σχετίζεται με τον ακόλουθο λόγο:<br />
             (Επιλέξτε το αντίστοιχο πλαίσιο του Μέρους Β’.)</b>
            </div>
          </div>
@@ -77,7 +77,7 @@
       <div class="form-group custom-control custom-checkbox mt-2">
         <b>
         <input type="checkbox" class="custom-control-input" id="customCheckHelp" name="customCheckHelp">
-        <label class="custom-control-label" for="customCheckHelp">Κίνηση για παροχή βοήθειας σε ανθρώπους που βρίσκονται σε ανάγκη. </label>
+        <label class="custom-control-label" for="customCheckHelp">Κίνηση για παροχή βοήθειας σε ανθρώπους που βρίσκονται σε ανάγκη.</label>
         </b>
       </div>
 

@@ -8,6 +8,7 @@ class TravelExclusionForm
 	public ?string $inputBirthdate;
 	public ?string $inputAddress;
 	public ?string $inputPlace;
+	public ?string $inputIdCard;
 	public ?string $inputTravelTime;
     public ?string $inputTravelDate;
 	public bool $customCheckFarmakeio;
@@ -16,6 +17,8 @@ class TravelExclusionForm
 	public bool $customCheckHelp;
 	public bool $customCheckTeleti;
 	public bool $customCheckGym;
+	public bool $customCheckPublicSector;
+	public bool $customCheckOther;
 }
 
 
