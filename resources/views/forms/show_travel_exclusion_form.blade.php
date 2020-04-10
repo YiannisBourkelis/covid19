@@ -1,5 +1,21 @@
 @extends('base')
 
+@section('title-tag', 'COVID-19 - Βεβαίωση κατ’ εξαίρεση μετακίνησης πολιτών')
+@section('description-meta-tag', 'Φόρμα για τη γρήγορη συμπλήρωση της βεβαίωσης κατ’ εξαίρεση μετακίνησης πολιτών. Έυκολη αποστολής sms αντί της εκτύπωσης του έντυπου κίνησης')
+
+@section('pre_head_script')
+<!-- Δημιουργήθηκε σήμανση JSON-LD από το Βοηθητικό πρόγραμμα για τη σήμανση δομημένων δεδομένων Google. -->
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "ΒΕΒΑΙΩΣΗ ΚΑΤ’ ΕΞΑΙΡΕΣΗ ΜΕΤΑΚΙΝΗΣΗΣ ΠΟΛΙΤΩΝ",
+    "articleSection" : "Δηλώνω ότι η μετακίνηση μου σχετίζεται με τον ακόλουθο λόγο",
+    "articleBody" : "Μετάβαση σε φαρμακείο ή επίσκεψη στον γιατρό, εφόσον αυτό συνιστάται μετά από σχετική επικοινωνία.</LABEL>\n            </B>\n         </DIV>\n\n         <DIV class=\"form-group custom-control custom-checkbox mt-2\">\n           <B>\n           <INPUT type=\"checkbox\" class=\"custom-control-input\" id=\"customCheckMarket\" name=\"customCheckMarket\"/>\n           <LABEL class=\"custom-control-label\" for=\"customCheckMarket\">Μετάβαση σε εν λειτουργία κατάστημα προμηθειών αγαθών πρώτης ανάγκης, όπου δεν είναι δυνατή η αποστολή τους.</LABEL>\n          </B>\n         </DIV>\n\n      <DIV class=\"form-group custom-control custom-checkbox mt-2\">\n        <B>\n        <INPUT type=\"checkbox\" class=\"custom-control-input\" id=\"customCheckBank\" name=\"customCheckBank\"/>\n        <LABEL class=\"custom-control-label\" for=\"customCheckBank\">Μετάβαση στην τράπεζα, στο μέτρο που δεν είναι δυνατή η ηλεκτρονική συναλλαγή.</LABEL>\n        </B>\n      </DIV>\n\n      <DIV class=\"form-group custom-control custom-checkbox mt-2\">\n        <B>\n        <INPUT type=\"checkbox\" class=\"custom-control-input\" id=\"customCheckHelp\" name=\"customCheckHelp\"/>\n        <LABEL class=\"custom-control-label\" for=\"customCheckHelp\">Κίνηση για παροχή βοήθειας σε ανθρώπους που βρίσκονται σε ανάγκη.</LABEL>\n        </B>\n      </DIV>\n\n      <DIV class=\"form-group custom-control custom-checkbox mt-2\">\n        <B>\n        <INPUT type=\"checkbox\" class=\"custom-control-input\" id=\"customCheckTeleti\" name=\"customCheckTeleti\"/>\n        <LABEL class=\"custom-control-label\" for=\"customCheckTeleti\">Μετάβαση σε τελετή (π.χ. κηδεία, γάμος, βάφτιση) υπό τους όρους που προβλέπει ο νόμος ή μετάβαση διαζευγμένων γονέων ή γονέων που τελούν σε διάσταση που είναι αναγκαία για τη διασφάλιση της επικοινωνίας γονέων και τέκνων, σύμφωνα με τις κείμενες διατάξεις.</LABEL>\n        </B>\n      </DIV>\n\n      <DIV class=\"form-group custom-control custom-checkbox mt-2 mb-2\">\n        <B>\n        <INPUT type=\"checkbox\" class=\"custom-control-input\" id=\"customCheckGym\" name=\"customCheckGym\"/>\n        <LABEL class=\"custom-control-label\" for=\"customCheckGym\">Σύντομη μετακίνηση, κοντά στην κατοικία μου, για ατομική σωματική άσκηση (εξαιρείται οποιαδήποτε συλλογική αθλητική δραστηριότητα) ή για τις ανάγκες κατοικιδίου ζώου."
+  }
+  </script>
+@endsection
+
 @section('main')
 <div class="row">
   <div class="col">

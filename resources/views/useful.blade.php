@@ -1,5 +1,21 @@
 @extends('base')
 
+@section('title-tag', 'Χρήσιμοι σύνδεσμοι - Παγκόσμιος χάρτης εξάπλωσης του COVID-19')
+@section('description-meta-tag', 'Διαδραστικοί, παγκόσμιοι χάρτες του COVID-19 για την καταγραφή της επιδημίας κατά τη διάρκεια του χρόνου, κατά χώρα και περιοχή. Παγκόσμιος χάρτης εξάπλωσης του COVID-19 με συγκεντρωτικά στοιχεία.')
+
+@section('pre_head_script')
+<!-- Δημιουργήθηκε σήμανση JSON-LD από το Βοηθητικό πρόγραμμα για τη σήμανση δομημένων δεδομένων Google. -->
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "Παγκόσμιος χάρτης εξάπλωσης του COVID-19",
+    "articleSection" : "Παγκόσμιος χάρτης εξάπλωσης του COVID-19 με συγκεντρωτικά στοιχεία",
+    "articleBody" : "Πίνακες με δεδομένα από την παγκόσμια εξάπλωση του COVID-19<BR/>\n  <A href=\"https://covid19dashboards.com\">https://covid19dashboards.com</A>\n  <HR/>\n  <SMALL class=\"text-muted\">Github: <A href=\"https://github.com/github/covid19-dashboard\">https://github.com/github/covid19-dashboard</A></SMALL>\n</DIV>\n\n<DIV class=\"alert alert-success\" role=\"alert\">\n  Προσομείωση της φυσικής πορείας της επιδημίας COVID-19 σε ένα πληθυσμό<BR/>\n  <A href=\"https://alhill.shinyapps.io/COVID19seir/\">https://alhill.shinyapps.io/COVID19seir/</A>\n  <HR/>\n  <SMALL class=\"text-muted\">Github: <A href=\"https://github.com/alsnhll/SEIR_COVID19\">https://github.com/alsnhll/SEIR_COVID19</A></SMALL>\n</DIV>\n\n<DIV class=\"alert alert-success\" role=\"alert\">\n  Δεδομένα εξάπλωσης του COVID-19 στην νότια Αφρική<BR/>\n  <A href=\"https://datastudio.google.com/u/0/reporting/1b60bdc7-bec7-44c9-ba29-be0e043d8534/page/hrUIB\">https://datastudio.google.com/u/0/reporting/1b60bdc7-bec7-44c9-ba29-be0e043d8534/page/hrUIB</A>\n  <HR/>\n  <SMALL class=\"text-muted\">Github: <A href=\"https://github.com/dsfsi/covid19za\">https://github.com/dsfsi/covid19za</A></SMALL>\n</DIV>\n\n<DIV class=\"alert alert-success\" role=\"alert\">\n  Έργα ανοιχτής σχεδίασης για ζωτικής σημασίας"
+  }
+</script>
+@endsection
+
 @section('main')
 <div class="alert alert-success" role="alert">
   Διαδραστικός, παγκόσμιος χάρτη του COVID-19 για την καταγραφή της επιδημίας κατά τη διάρκεια του χρόνου, κατά χώρα και περιοχή<br />

@@ -9,10 +9,13 @@
   <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   
-  <title>COVID-19</title>
+  <title>@yield('title-tag')</title>
+  <meta name="description" content="@yield('description-meta-tag')">
 
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.slim.min.js"></script>
+
+  @yield('pre_head_script')
 </head>
 <body>
   <div class="container">
