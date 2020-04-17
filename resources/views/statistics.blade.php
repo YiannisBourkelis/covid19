@@ -26,7 +26,7 @@
 Επιμέλεια στατιστικών: Στάθης Γρηγοριάδης - <a href="https://covid19gr.wordpress.com">https://covid19gr.files.wordpress.com</a>
 </div>
 
-<img src="https://covid19gr.files.wordpress.com/2020/04/covid-12-04-2020-01.png" class="img-fluid" alt="Responsive image">
+<img src="https://covid19gr.files.wordpress.com/2020/04/covid-15-04-2020-01.png" class="img-fluid" alt="Responsive image">
 
 </div>
 </div>
