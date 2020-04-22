@@ -72,42 +72,42 @@
          <div class="form-group custom-control custom-checkbox mt-3">
             <b>
             <input type="checkbox" class="custom-control-input" id="customCheckFarmakeio" name="customCheckFarmakeio">
-            <label class="custom-control-label" for="customCheckFarmakeio">Μετάβαση σε φαρμακείο ή επίσκεψη στον γιατρό, εφόσον αυτό συνιστάται μετά από σχετική επικοινωνία.</label>
+            <label class="custom-control-label" for="customCheckFarmakeio">Β1&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε φαρμακείο ή επίσκεψη στον γιατρό, εφόσον αυτό συνιστάται μετά από σχετική επικοινωνία.</label>
             </b>
          </div>
 
          <div class="form-group custom-control custom-checkbox mt-2">
            <b>
            <input type="checkbox" class="custom-control-input" id="customCheckMarket" name="customCheckMarket">
-           <label class="custom-control-label" for="customCheckMarket">Μετάβαση σε εν λειτουργία κατάστημα προμηθειών αγαθών πρώτης ανάγκης, όπου δεν είναι δυνατή η αποστολή τους.</label>
+           <label class="custom-control-label" for="customCheckMarket">Β2&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε εν λειτουργία κατάστημα προμηθειών αγαθών πρώτης ανάγκης, όπου δεν είναι δυνατή η αποστολή τους.</label>
           </b>
          </div>
 
       <div class="form-group custom-control custom-checkbox mt-2">
         <b>
         <input type="checkbox" class="custom-control-input" id="customCheckBank" name="customCheckBank">
-        <label class="custom-control-label" for="customCheckBank">Μετάβαση στην τράπεζα, στο μέτρο που δεν είναι δυνατή η ηλεκτρονική συναλλαγή.</label>
+        <label class="custom-control-label" for="customCheckBank">Β3&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση στην τράπεζα, στο μέτρο που δεν είναι δυνατή η ηλεκτρονική συναλλαγή.</label>
         </b>
       </div>
 
       <div class="form-group custom-control custom-checkbox mt-2">
         <b>
         <input type="checkbox" class="custom-control-input" id="customCheckHelp" name="customCheckHelp">
-        <label class="custom-control-label" for="customCheckHelp">Κίνηση για παροχή βοήθειας σε ανθρώπους που βρίσκονται σε ανάγκη.</label>
+        <label class="custom-control-label" for="customCheckHelp">Β4&nbsp;&nbsp;&nbsp;&nbsp;Κίνηση για παροχή βοήθειας σε ανθρώπους που βρίσκονται σε ανάγκη.</label>
         </b>
       </div>
 
       <div class="form-group custom-control custom-checkbox mt-2">
         <b>
         <input type="checkbox" class="custom-control-input" id="customCheckTeleti" name="customCheckTeleti">
-        <label class="custom-control-label" for="customCheckTeleti">Μετάβαση σε τελετή (π.χ. κηδεία, γάμος, βάφτιση) υπό τους όρους που προβλέπει ο νόμος ή μετάβαση διαζευγμένων γονέων ή γονέων που τελούν σε διάσταση που είναι αναγκαία για τη διασφάλιση της επικοινωνίας γονέων και τέκνων, σύμφωνα με τις κείμενες διατάξεις.</label>
+        <label class="custom-control-label" for="customCheckTeleti">Β5&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε τελετή (π.χ. κηδεία, γάμος, βάφτιση) υπό τους όρους που προβλέπει ο νόμος ή μετάβαση διαζευγμένων γονέων ή γονέων που τελούν σε διάσταση που είναι αναγκαία για τη διασφάλιση της επικοινωνίας γονέων και τέκνων, σύμφωνα με τις κείμενες διατάξεις.</label>
         </b>
       </div>
 
       <div class="form-group custom-control custom-checkbox mt-2 mb-2">
         <b>
         <input type="checkbox" class="custom-control-input" id="customCheckGym" name="customCheckGym">
-        <label class="custom-control-label" for="customCheckGym">Σύντομη μετακίνηση, κοντά στην κατοικία μου, για ατομική σωματική άσκηση (εξαιρείται οποιαδήποτε συλλογική αθλητική δραστηριότητα) ή για τις ανάγκες κατοικιδίου ζώου.</label>
+        <label class="custom-control-label" for="customCheckGym">Β6&nbsp;&nbsp;&nbsp;&nbsp;Σύντομη μετακίνηση, κοντά στην κατοικία μου, για ατομική σωματική άσκηση (εξαιρείται οποιαδήποτε συλλογική αθλητική δραστηριότητα) ή για τις ανάγκες κατοικιδίου ζώου.</label>
         </b>
       </div>
 
