@@ -6,7 +6,6 @@ use GeoIp2\Database\Reader;
 
 use Illuminate\Http\Request;
 use App\Helpers\TravelExclusionForm;
-use App\Classes\MobileFastDetect;
 
 class TravelExclusionController extends Controller
 {
