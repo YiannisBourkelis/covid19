@@ -18,6 +18,11 @@
 
 @section('main')
 <div class="alert alert-success" role="alert">
+  Παγκόσμια στατιστικά της πανδημίας COVID-19 με γραφήματα και πίνακες, με δυνατότητα ταξινόμισης των αποτελεσμάτων<br />
+  <a href="https://www.worldometers.info/coronavirus/">https://www.worldometers.info/coronavirus/</a>
+</div>
+
+<div class="alert alert-success" role="alert">
   Διαδραστικός, παγκόσμιος χάρτη του COVID-19 για την καταγραφή της επιδημίας κατά τη διάρκεια του χρόνου, κατά χώρα και περιοχή<br />
   <a href="https://covid19.health">https://covid19.health</a>
   <hr>
