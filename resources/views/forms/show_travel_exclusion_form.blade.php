@@ -69,44 +69,44 @@
            </div>
          </div>
 
-         <div class="form-group custom-control custom-checkbox mt-3">
+         <div class="form-group custom-control custom-radio mt-3">
             <b>
-            <input type="checkbox" class="custom-control-input" id="customCheckFarmakeio" name="customCheckFarmakeio">
+            <input type="radio" class="custom-control-input" id="customCheckFarmakeio" name="customRadio" value="customCheckFarmakeio">
             <label class="custom-control-label" for="customCheckFarmakeio">Β1&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε φαρμακείο ή επίσκεψη στον γιατρό, εφόσον αυτό συνιστάται μετά από σχετική επικοινωνία.</label>
             </b>
          </div>
 
-         <div class="form-group custom-control custom-checkbox mt-2">
+         <div class="form-group custom-control custom-radio mt-2">
            <b>
-           <input type="checkbox" class="custom-control-input" id="customCheckMarket" name="customCheckMarket">
+           <input type="radio" class="custom-control-input" id="customCheckMarket" name="customRadio" value="customCheckMarket">
            <label class="custom-control-label" for="customCheckMarket">Β2&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε εν λειτουργία κατάστημα προμηθειών αγαθών πρώτης ανάγκης (σούπερ μάρκετ, μίνι μάρκετ), όπου δεν είναι δυνατή η αποστολή τους.</label>
           </b>
          </div>
 
-      <div class="form-group custom-control custom-checkbox mt-2">
+      <div class="form-group custom-control custom-radio mt-2">
         <b>
-        <input type="checkbox" class="custom-control-input" id="customCheckBank" name="customCheckBank">
+        <input type="radio" class="custom-control-input" id="customCheckBank" name="customRadio" value="customCheckBank">
         <label class="custom-control-label" for="customCheckBank">Β3&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε δημόσια υπηρεσία ή τράπεζα, στο μέτρο που δεν είναι δυνατή η ηλεκτρονική συναλλαγή.</label>
         </b>
       </div>
 
-      <div class="form-group custom-control custom-checkbox mt-2">
+      <div class="form-group custom-control custom-radio mt-2">
         <b>
-        <input type="checkbox" class="custom-control-input" id="customCheckHelp" name="customCheckHelp">
+        <input type="radio" class="custom-control-input" id="customCheckHelp" name="customRadio" value="customCheckHelp">
         <label class="custom-control-label" for="customCheckHelp">Β4&nbsp;&nbsp;&nbsp;&nbsp;Κίνηση για παροχή βοήθειας σε ανθρώπους που βρίσκονται σε ανάγκη ή συνοδεία ανηλίκων μαθητών από/προς το σχολείο.</label>
         </b>
       </div>
 
-      <div class="form-group custom-control custom-checkbox mt-2">
+      <div class="form-group custom-control custom-radio mt-2">
         <b>
-        <input type="checkbox" class="custom-control-input" id="customCheckTeleti" name="customCheckTeleti">
+        <input type="radio" class="custom-control-input" id="customCheckTeleti" name="customRadio" value="customCheckTeleti">
         <label class="custom-control-label" for="customCheckTeleti">Β5&nbsp;&nbsp;&nbsp;&nbsp;Μετάβαση σε τελετή (π.χ. κηδεία, γάμος, βάφτιση) υπό τους όρους που προβλέπει ο νόμος ή μετάβαση διαζευγμένων γονέων ή γονέων που τελούν σε διάσταση που είναι αναγκαία για τη διασφάλιση της επικοινωνίας γονέων και τέκνων, σύμφωνα με τις κείμενες διατάξεις.</label>
         </b>
       </div>
 
-      <div class="form-group custom-control custom-checkbox mt-2 mb-2">
+      <div class="form-group custom-control custom-radio mt-2 mb-2">
         <b>
-        <input type="checkbox" class="custom-control-input" id="customCheckGym" name="customCheckGym">
+        <input type="radio" class="custom-control-input" id="customCheckGym" name="customRadio" value="customCheckGym">
         <label class="custom-control-label" for="customCheckGym">Β6&nbsp;&nbsp;&nbsp;&nbsp;Σωματική άσκηση σε εξωτερικό χώρο ή κίνηση με κατοικίδιο ζώο, ατομικά ή ανά δύο άτομα, τηρώντας στην τελευταία αυτή περίπτωση την αναγκαία απόσταση 1,5 μέτρου.</label>
         </b>
       </div>

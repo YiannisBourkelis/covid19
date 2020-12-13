@@ -28,12 +28,12 @@ class TravelExclusionController extends Controller
 		$travelExclusionForm->inputPlace = $request->input('inputPlace');
 		$travelExclusionForm->inputTravelTime = $request->input('inputTravelTime');
 		$travelExclusionForm->inputTravelDate = $request->input('inputTravelDate');
-    	$travelExclusionForm->customCheckFarmakeio = $request->has('customCheckFarmakeio');
-		$travelExclusionForm->customCheckMarket = $request->has('customCheckMarket');
-		$travelExclusionForm->customCheckBank = $request->has('customCheckBank');
-		$travelExclusionForm->customCheckHelp = $request->has('customCheckHelp');
-		$travelExclusionForm->customCheckTeleti = $request->has('customCheckTeleti');
-		$travelExclusionForm->customCheckGym = $request->has('customCheckGym');
+    	$travelExclusionForm->customCheckFarmakeio = $request->customRadio === 'customCheckFarmakeio';
+		$travelExclusionForm->customCheckMarket = $request->customRadio === 'customCheckMarket';
+		$travelExclusionForm->customCheckBank = $request->customRadio === 'customCheckBank';
+		$travelExclusionForm->customCheckHelp = $request->customRadio === 'customCheckHelp';
+		$travelExclusionForm->customCheckTeleti = $request->customRadio === 'customCheckTeleti';
+		$travelExclusionForm->customCheckGym = $request->customRadio === 'customCheckGym';
 	
 		//$myfullname = $request->get('inputYpografon');
 	  return view('forms.print_travel_exclusion_form')->with('travelExclusionForm', $travelExclusionForm);
