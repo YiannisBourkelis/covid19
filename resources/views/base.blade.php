@@ -46,7 +46,7 @@
                 <li class="nav-item">
                   <a class="nav-item nav-link @if (Route::current()->getName() == session('country', '').'_statistics') active @endif" href="{{route(session('country', '').'_statistics')}}">Στατιστικά</a>
                 </li>
-              -->
+                -->
                 <li class="nav-item">
                   <a class="nav-item nav-link @if (Route::current()->getName() == session('country', '').'_useful') active @endif" href="{{route(session('country', '').'_useful')}}">Χρήσιμα</a>
                 </li>
